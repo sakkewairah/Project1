@@ -5,6 +5,14 @@ let inputField = document.getElementById('inputField');
 addToDoButton.addEventListener('click', function(){
     var paragraph = document.createElement('p');
     paragraph.classList.add('paragraph-styling');
+    if (paragraph.length == 0)
+    {
+      para.innerHTML = "NOOOO";
+    }
+    else{   
+  
+      para.innerHTML = testInput;
+    }
     paragraph.innerText = inputField.value;
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
