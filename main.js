@@ -8,14 +8,7 @@ addToDoButton.addEventListener('click', function(){
     paragraph.innerText = inputField.value;
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
-     document.getElementById("function_code").onkeypress = function(e) {
-        var chr = String.fromCharCode(e.which);
-        if ("></\":*?|".indexOf(chr) >= 0) {
-          this.setCustomValidity('A filename cannot contain any of the following characters: \/:*?"<>|');
-        } else {
-          this.setCustomValidity('');
-        }
-    };
+    
     paragraph.addEventListener('click', function(){
         paragraph.style.textDecoration = "line-through";
     })
