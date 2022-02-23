@@ -11,7 +11,7 @@ addToDoButton.addEventListener('click', function(){
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
 
-    if (this.textContent.value  === " ")
+    if (inputField) 
     {
         alert ( " Please write something")
     }
