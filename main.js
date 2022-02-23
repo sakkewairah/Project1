@@ -10,6 +10,11 @@ addToDoButton.addEventListener('click', function(){
     paragraph.innerText = inputField.value;
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
+
+    if (inputField.value === " ")
+    {
+        alert ( " Please write something")
+    }
     
     paragraph.addEventListener('click', function(){
         paragraph.style.textDecoration = "line-through";
