@@ -10,8 +10,8 @@ addToDoButton.addEventListener('click', function(){
     paragraph.innerText = inputField.value;
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
-    
-    if(document.getElementById("inputfield").value.length == 0)
+
+    if(document.getElementById("addToDo").value.length == 0)
 {
     alert("empty")
 }
