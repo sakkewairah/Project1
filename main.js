@@ -10,9 +10,11 @@ addToDoButton.addEventListener('click', function(){
     paragraph.innerText = inputField.value;
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
+     {
+    if (document.getElementById("inputfield"))  
+       value.length == 0 
+    
 
-    if (inputField == null) 
-    {
         alert ( " Please write something")
     }
     
