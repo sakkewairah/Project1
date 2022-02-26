@@ -11,6 +11,10 @@ addToDoButton.addEventListener('click', function(){
     paragraph.innerText = inputField.value;
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
+    if (inputField.length === 0)  {
+        alert("mORO")
+    }
+    
 
     
     
@@ -21,6 +25,3 @@ addToDoButton.addEventListener('click', function(){
         toDoContainer.removeChild(paragraph);
     })
 }) 
-if (inputField.length === 0)  {
-    alert("mORO")
-}
