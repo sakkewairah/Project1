@@ -4,6 +4,10 @@ let inputField = document.getElementById('inputField');
 
 addToDoButton.addEventListener('click', function(){
     var paragraph = document.createElement('p');
+    if (document.createElement("p") === 0)  {
+        alert("mORO")
+    }
+    
     	
    
     paragraph.classList.add('paragraph-styling');
@@ -11,9 +15,7 @@ addToDoButton.addEventListener('click', function(){
     paragraph.innerText = inputField.value;
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
-    if (inputField.value == " ")  {
-        alert("mORO")
-    }
+   
     
 
     
