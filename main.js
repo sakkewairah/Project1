@@ -4,6 +4,11 @@ let inputField = document.getElementById('inputField');
 
 addToDoButton.addEventListener('click', function(){
     var paragraph = document.createElement('p');
+    if (paragraph.value.length == 0)
+      { 
+         alert("message");  	
+         return false; 
+      }  	
    
     paragraph.classList.add('paragraph-styling');
     
@@ -11,10 +16,7 @@ addToDoButton.addEventListener('click', function(){
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
 
-    if(document.getElementById("addToDo").value.length == 0)
-{
-    alert("empty")
-}
+    
     
     paragraph.addEventListener('click', function(){
         paragraph.style.textDecoration = "line-through";
