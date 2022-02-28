@@ -14,7 +14,7 @@ function addTodo() {
   const todoText = document.querySelector("#myInput").value;
 
   if (todoText == "") {
-    alert("You did not enter any item");
+    alert("Et kirjoittanut mitää");
   } else {
     const todoObject = {
       id: todoList.length,
