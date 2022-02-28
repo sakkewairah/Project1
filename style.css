@@ -102,7 +102,12 @@ ul li.checked::before {
 }
 
 /* Style the trash button */
-
+.far {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
 
 .far:hover {
   background-color: tomato;
